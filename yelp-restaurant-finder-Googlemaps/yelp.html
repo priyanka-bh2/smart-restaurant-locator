@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Find Restaurants on Yelp with Google Maps</title>
+    <meta charset="utf-8"/>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC4FMJk94qkXAdDcbJwCvjD5c86a8LHCmA&callback=initialize"></script>
+    <script type="text/javascript" src="yelp.js"></script>
+    <style>
+      #googlemap {
+        height: 500px;
+        width: 600px;
+        margin-top: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Find Restaurants</h1>
+    <form> 
+      <label>Search Terms: <input type="text" id="searchterms" placeholder="Enter to search terms"/></label>
+      <input type="button" onclick="findRestaurants();" value="Find"/>
+    </form>
+<!-- Google Map -->
+    <div id="googlemap"></div> 
+  </body>
+</html>
